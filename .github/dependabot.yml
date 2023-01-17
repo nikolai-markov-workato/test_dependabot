@@ -3,8 +3,8 @@ updates:
   - package-ecosystem: bundler
     directory: "/"
     commit-message:
-      prefix: ""
-      prefix-development: ""
+      prefix: "prod"
+      prefix-development: "dev"
       # include: "scope"
     schedule:
       interval: weekly
