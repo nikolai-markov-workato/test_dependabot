@@ -4,6 +4,7 @@ GEM
     business (1.0.0)
     macaddr (1.7.2)
       systemu (~> 2.6.5)
+    nanoid (1.0.0)
     systemu (2.6.5)
     uk_phone_numbers (0.1.0)
     uuid (2.3.5)
@@ -14,6 +15,7 @@ PLATFORMS
 
 DEPENDENCIES
   business (~> 1.0.0)
+  nanoid (~> 1.0.0)
   uk_phone_numbers (~> 0.1.0)
   uuid (~> 2.3.5)
 
