@@ -3,6 +3,7 @@ updates:
   - package-ecosystem: bundler
     directory: "/"
     commit-message:
+      prefix: ""
       prefix-development: "Dev:"
       include: "scope"
     schedule:
