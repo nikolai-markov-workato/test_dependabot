@@ -15,7 +15,7 @@ PLATFORMS
 
 DEPENDENCIES
   business (~> 1.0.0)
-  nanoid (~> 1.0.0)
+  nanoid
   uk_phone_numbers (~> 0.1.0)
   uuid (~> 2.3.5)
 
