@@ -5,6 +5,6 @@ updates:
     commit-message:
       prefix: ""
       prefix-development: ""
-      include: "scope"
+      # include: "scope"
     schedule:
       interval: weekly
