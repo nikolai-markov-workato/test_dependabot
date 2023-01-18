@@ -1,6 +1,5 @@
 name: RSpec
 on: [push]
-env:
 jobs:
   rspec:
     environment: test
