@@ -1,0 +1,17 @@
+name: RSpec
+on: [push]
+env:
+jobs:
+  rspec:
+    environment: test
+    runs-on: ubuntu-22.04
+    timeout-minutes: 2
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Test secrets
+        run: ruby test_secrets.rb
+        env:
+          FOO_KEY: ${{ secrets.FOO_KEY }}
+          REPO_KEY: ${{ secrets.REPO_KEY }}
