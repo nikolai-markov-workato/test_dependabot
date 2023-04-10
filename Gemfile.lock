@@ -6,7 +6,7 @@ GEM
       systemu (~> 2.6.5)
     nanoid (1.0.0)
     systemu (2.6.5)
-    timezone (1.3.17)
+    timezone (1.3.23)
     uk_phone_numbers (0.1.0)
     uuid (2.3.5)
       macaddr (~> 1.0)
