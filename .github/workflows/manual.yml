@@ -1,0 +1,35 @@
+name: Deploy Image CD Production
+
+on:
+  workflow_dispatch:
+    inputs:
+      region_us:
+        description: 'Region'
+        type: boolean
+      region_eu:
+        description: 'Region'
+        type: boolean
+      region:
+        description: 'Region'
+        type: choice
+        required: true
+        default: 'all'
+        options:
+          - all
+          - us
+          - eu
+          - sg
+          - jp
+
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+
+    steps:
+      - name: Check args
+        run: |
+          echo "region_us: ${{ inputs.region_us }}"
+          echo "region_eu: ${{ inputs.region_eu }}"
+          echo "region_us == true: ${{ inputs.region_us == true}}"
+          echo "region_eu == true: ${{ inputs.region_eu == true }}"
+          echo "${{ inputs.region == 'all' && 'us,eu,sg,jp' || inputs.region }}"
