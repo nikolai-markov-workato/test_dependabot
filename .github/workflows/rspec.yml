@@ -1,12 +1,15 @@
 name: RSpec
 on: [push]
-environment: test
 jobs:
-  runs-on: ubuntu-22.04
-  timeout-minutes: 2
-  steps:
-    - name: Check out repository code
-      uses: actions/checkout@v3
+  rspec:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 2
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
 
-    - name: Run
-      run: bundle info
+      - name: Install ruby
+        uses: ./.github/workflows/rspec_setup
+
+      - name: Run
+        run: bundle info
